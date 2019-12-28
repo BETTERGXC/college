@@ -64,7 +64,7 @@ DataType Pop(sqstack* s) {
 
 // 获取栈顶的数据
 DataType Top(sqstack* s) {
-	return s->data[s->top + 1];
+	return s->data[s->top];
 }
 
 
