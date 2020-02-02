@@ -22,5 +22,5 @@ char* addBinary(char* a, char* b) {
         res[--len] = pa ^ pb ^ carry; // 当前位
         carry = (pa & carry) | (pb & carry) | (pa & pb); //进位
     }
-    return res + len;   // len?
+    return res + len;   // res是指针，len表示从第零位开始还是第一位 
 }
