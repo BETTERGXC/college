@@ -1,3 +1,10 @@
+/*
+** œ‡Ωª¡¥±Ì
+*/ 
+
+
+
+
 typedef struct ListNode Node; 
 struct ListNode *getIntersectionNode(struct ListNode *headA, struct ListNode *headB) {
     Node* curA = headA;
