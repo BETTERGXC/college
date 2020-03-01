@@ -46,9 +46,9 @@ void AdjustUp(int *a, int child) {
 }
 
 // ¶ÑµÄ¹¹½¨
-void HeapCreat(Heap* hp,HPDataType* a,size_t n) {
+Heap* HeapCreat(Heap* hp,HPDataType* a,size_t n) {
 	hp->_a = (HPDataType*)malloc(sizeof(HPDataType)*n);
-	memccpy(hp->_a, a, sizeof(HPDataType)*n);
+	memcpy(hp->_a, a, sizeof(HPDataType)*n);
 	hp->_size = n;
 	hp->_capacity = n;
 
