@@ -127,9 +127,13 @@ void HeapSort(int *a, int n) {
 
 //Top k
 void PrintTopK(int* a, int n, int k) {
-	HeapSort(a, n);
-	for (int i = 0; i < k; ++i) {
-		printf("%d  ", a[i]);
-	}
-	printf("\n");
+	Heap hp;
+	HeapCreat(&hp,a,k);
+	
+	for(int i = k;i<n;++i) {
+		if(HeapTop(&hp) < a[i]) {
+			HeapPop(&hp);
+			HeapPush(&hp,a[i]);
+		}
+	} 
 }
