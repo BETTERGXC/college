@@ -134,7 +134,7 @@ namespace seft {
             ///////////////access///////////////////////////////
 
         T& operator[](size_t pos) {
-            assert(pos < _finish)
+            assert(pos < _finish);
             return _start[pos];
         }   
 
