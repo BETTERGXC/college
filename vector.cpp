@@ -31,7 +31,7 @@ namespace seft {
 
 
 
-        // construct and destroy
+
 
         vector() 
             :_start(nullptr)
@@ -131,7 +131,6 @@ namespace seft {
 
 
 
-            ///////////////access///////////////////////////////
 
         T& operator[](size_t pos) {
             assert(pos < _finish);
@@ -145,7 +144,6 @@ namespace seft {
 
 
 
-            ///////////////modify/////////////////////////////
 
         void push_back(const T& x) {
             insert(end(), x);
