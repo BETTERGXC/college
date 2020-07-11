@@ -56,7 +56,7 @@ struct _TreeIterator {
 			Node* parent = cur->_parent;
 			while (parent && cur == parent->_right) {
 				cur = cur->_parent;
-				parent->_parent->_parent;
+				parent = parent->_parent;
 			}
 
 			_node = parent;
